@@ -802,14 +802,14 @@
     });
 </script>
 <!-- Add this modal at the end of your HTML body -->
-<div id="successModal" class="modal">
+<!-- <div id="successModal" class="modal">
   <div class="modal-content">
     <span class="close" onclick="closeModal()">&times;</span>
     <p id="successMessage"></p>
   </div>
-</div>
+</div> -->
 
-
+<!-- 
 
 <script>
   document.addEventListener('DOMContentLoaded', function () {
@@ -828,28 +828,28 @@
       // Display the success message in the modal
       document.getElementById('successMessage').textContent = successMessage;
     
-// function showModal() {
-//   document.getElementById('successModal').style.display = 'block';
+function showModal() {
+  document.getElementById('successModal').style.display = 'block';
 
-//   // Fetch the success message from the server (you can replace this with actual AJAX/Fetch call)
-//   fetch('/submit-form', {
-//     method: 'POST',
-//     headers: {
-//       'Content-Type': 'application/x-www-form-urlencoded',
-//     },
-//     body: new URLSearchParams(new FormData(document.querySelector('.php-email-form'))),
-//   })
-//     .then(response => response.text())
-//     .then(successMessage => {
-//       // Display the success message in the modal
-//       document.getElementById('successMessage').textContent = successMessage;
-//     })
-//     .catch(error => {
-//       console.error('Error fetching success message:', error);
-//     });
-// }
+  // Fetch the success message from the server (you can replace this with actual AJAX/Fetch call)
+  fetch('/submit-form', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/x-www-form-urlencoded',
+    },
+    body: new URLSearchParams(new FormData(document.querySelector('.php-email-form'))),
+  })
+    .then(response => response.text())
+    .then(successMessage => {
+      // Display the success message in the modal
+      document.getElementById('successMessage').textContent = successMessage;
+    })
+    .catch(error => {
+      console.error('Error fetching success message:', error);
+    });
+}
 
-</script>
+</script> -->
 
 
 </body>
